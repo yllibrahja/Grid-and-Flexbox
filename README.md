@@ -21,7 +21,8 @@ selection {
 ```css
 grid-template-rows: 100px 200px;
 ```
-* This creates two rows with heights of '100px' and '200px' respectively.
+> [!NOTE]
+> This creates two rows with heights of <sup>'100px'</sup> and <sup>'200px'</sup> respectively.
 
 ### <code>grid-template-columns</code>
 
@@ -29,7 +30,8 @@ grid-template-rows: 100px 200px;
 ```css
 grid-template-columns: 1fr 2fr;
 ```
-* This creates two columns with width propertional to the available space, where the second column is twice as wide as the first.
+> [!NOTE]
+> This creates two columns with width propertional to the available space, where the second column is twice as wide as the first.
 
 ### <code>grid-template-areas</code>
 
@@ -40,8 +42,9 @@ grid-template-areas:
   "sidebar main"
   "footer footer";
 ```
-* This creates a grid with three rows and two columns. <br>
-* The named areas "header", "sidebar", "main", and "footer" define the layout of elements within the grid.
+> [!NOTE]
+> This creates a grid with three rows and two columns.
+> The named areas <sup>"header"</sup>, <sup>"sidebar"</sup>, <sup>"main"</sup>, and <sup>"footer"</sup> define the layout of elements within the grid.
 
 ### <code>grid-auto-rows</code>
 
@@ -49,15 +52,17 @@ grid-template-areas:
 ```css
 gird-auto-rows: minmax(100px, auto));
 ```
-* This sets the default height for unspecified rows to be a minimun of '100px' and expand to fit the content. 
+> [!NOTE]
+> This sets the default height for unspecified rows to be a minimun of <sup>'100px'</sup> and expand to fit the content. 
 
 ### <code>grid-auto-columns</code>
 
-* Similar to 'grid-auto-rows', this property sets the default width for columns that haven't been explicity defined. 
+* Similar to <sup>'grid-auto-rows'</sup>, this property sets the default width for columns that haven't been explicity defined. 
 ```css
 grid-auto-columns: 100px;
 ```
-* This sets the default width for unspecified columns to '100px'.
+> [!NOTE]
+> This sets the default width for unspecified columns to <sup>'100px'</sup>.
 
 ### <code>grid-auto-flow</code>
 
@@ -65,7 +70,8 @@ grid-auto-columns: 100px;
 ```css
 grid-auto-flow: row dense;
 ```
-* This sets the default location for grid items that are not explicitly allocated to follow the row leyout, and items are densely packed within the grid.
+> [!NOTE]
+> This sets the default location for grid items that are not explicitly allocated to follow the row leyout, and items are densely packed within the grid.
 
 ### <code>column-gap</code>
 
@@ -73,7 +79,8 @@ grid-auto-flow: row dense;
 ```css
 column-gap: 20px;
 ```
-* This sets a gap of '20px' between columns.
+> [!NOTE]
+> This sets a gap of <sup>'20px'</sup> between columns.
 
 ### <code>row-gap</code>
 
@@ -81,7 +88,39 @@ column-gap: 20px;
 ```css
 row-gap: 20px;
 ```
-* This sets a gap of '20px' between rows.
+> [!NOTE]
+> This sets a gap of <sup>'20px'</sup> between rows.
+
+> [!TIP]
+> An HTML and CSS example with each section seperated and labeled:
+```html
+<div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+</div>
+```
+```css
+/* Grid Container */
+.grid-container {
+    display: grid; /* Create a grid container */
+    grid-template-rows: 100px 150px; /* Define two rows with heights of 100px and 150px */
+    grid-template-columns: 1fr 2fr 1fr; /* Define three columns with flexible widths */
+    grid-template-areas: 
+        "header header header" /* Define grid areas for layout */
+        "sidebar main main"; /* Define grid areas for layout */
+    grid-auto-rows: auto; /* Default height for rows not explicitly sized */
+    grid-auto-columns: auto; /* Default width for columns not explicitly sized */
+    grid-auto-flow: row; /* Default flow for items placed on the grid */
+    column-gap: 20px; /* Set gap between columns */
+    row-gap: 10px; /* Set gap between rows */
+}
+
+/* Grid Items */
+.grid-item {
+    border: 1px solid black; /* Add border for visualization */
+}
+```
 
 # ▶️ Grid properties for container
 
@@ -92,7 +131,8 @@ row-gap: 20px;
 ```css
 grid-template-columns: 100px 1fr 2fr;
 ```
-* This creates three columns with sizes of <sup>'100px'</sup>, one fraction of the available space, and two fractions of the available space, respectively.
+> [!NOTE]
+> This creates three columns with sizes of <sup>'100px'</sup>, one fraction of the available space, and two fractions of the available space, respectively.
 
 ### <code>grid-template-rows:</code>
 
@@ -100,7 +140,8 @@ grid-template-columns: 100px 1fr 2fr;
 ```css
 grid-template-rows: 100px 200px;
 ```
-* This creates two rows with heights of <sup>'100px'</sup> and <sup>'200px'</sup> respectively.
+> [!NOTE]
+> This creates two rows with heights of <sup>'100px'</sup> and <sup>'200px'</sup> respectively.
 
 ### <code>grid-auto-columns</code>
 
@@ -108,7 +149,8 @@ grid-template-rows: 100px 200px;
 ```css
 grid-auto-columns: 50px;
 ```
-* This sets the default width for unspecified columns to <sup>'50px'</sup>.
+> [!NOTE]
+> This sets the default width for unspecified columns to <sup>'50px'</sup>.
 
 ### <code>grid-auto-rows</code>
 
@@ -116,7 +158,8 @@ grid-auto-columns: 50px;
 ```css
 grid-auto-rows: 1fr;
 ```
-* This sets the default height for unspecified rows to take up an equal share of the availabe space. 
+> [!NOTE]
+> This sets the default height for unspecified rows to take up an equal share of the availabe space. 
 
 ### <code>grid-template</code>
 
@@ -126,9 +169,8 @@ grid-template: "header header" auto
                 "main right" 75vh
                 "footer footer" 20rem;
 ```
-* This defines a grid with three rows and two columns, where the first row is auto sized,<br>
-* and second row takes up 75% of the viewport height, and the third row is <sup>'20rem'</sup> in height.<br>
-* The two columns are named <sup>"header"</sup> and <sup>"right"</sup>, respectively.
+> [!NOTE]
+> This defines a grid with three rows and two columns, where the first row is auto sized, and second row takes up 75% of the viewport height, and the third row is <sup>'20rem'</sup> in height. The two columns are named <sup>"header"</sup> and <sup>"right"</sup>, respectively.
 
 # ▶️ Gap
 
@@ -138,7 +180,8 @@ grid-template: "header header" auto
 ```css
 grid-gap: 10px 20px;
 ```
-* This sets a gap of <sup>'10px'</sup> between rows and <sup>'20px'</sup> between columns.
+> [!NOTE]
+> This sets a gap of <sup>'10px'</sup> between rows and <sup>'20px'</sup> between columns.
 
 ### <code>grid-column-gap</code>
 
@@ -146,7 +189,8 @@ grid-gap: 10px 20px;
 ```css
 grid-column-gap: 15px;
 ```
-* This sets a gap of <sup>'15px'</sup> between columns.
+> [!NOTE]
+> This sets a gap of <sup>'15px'</sup> between columns.
 
 ### <code>grid-row-gap</code>
 
@@ -154,7 +198,8 @@ grid-column-gap: 15px;
 ```css
 grid-row-gap: 1em;
 ```
-* This sets a gap of '1em' between rows.
+> [!NOTE]
+> This sets a gap of '1em' between rows.
 
 # ▶️ Alignment
 
@@ -178,7 +223,8 @@ grid-row-gap: 1em;
     /* Additional styling for grid items */
 }
 ```
-* In this example, all grid items will be centered horizontally within their respective grid cells. 
+> [!NOTE]
+> In this example, all grid items will be centered horizontally within their respective grid cells. 
 
 ### <code>align-items</code> 
 
@@ -200,7 +246,8 @@ grid-row-gap: 1em;
     /* Additional styling for grid items */
 }
 ```
-* In this example, all grid items will be centered vertically within their respective grid cells. 
+> [!NOTE]
+> In this example, all grid items will be centered vertically within their respective grid cells. 
 
 ### <code>place-items</code>
 
@@ -222,9 +269,8 @@ grid-row-gap: 1em;
     /* Additional styling for grid items */
 }
 ```
-* In this example, all grid items will be centered both horizontally and vetically within their respective grid cells. <br>
-* These alignment properties provide a convenient way to control the positioning of grid items within a CSS grid. <br>
-* Allowing for flexible and responsive layout. 
+> [!NOTE]
+> In this example, all grid items will be centered both horizontally and vetically within their respective grid cells.These alignment properties provide a convenient way to control the positioning of grid items within a CSS grid. Allowing for flexible and responsive layout. 
 
 
 
