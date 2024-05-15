@@ -15,84 +15,7 @@ selection {
 
 * A grid will allow you to organize the various elements on your page.
 
-### <code>grid-template-rows</code>
-
-* This property defines the size and number of rows in the grid.
-```css
-grid-template-rows: 100px 200px;
-```
-> [!NOTE]
-> This creates two rows with heights of <sup>'100px'</sup> and <sup>'200px'</sup> respectively.
-
-### <code>grid-template-columns</code>
-
-* This property defines the size and number of columns in the grid.
-```css
-grid-template-columns: 1fr 2fr;
-```
-> [!NOTE]
-> This creates two columns with width propertional to the available space, where the second column is twice as wide as the first.
-
-### <code>grid-template-areas</code>
-
-* This property allows you to define named grid areas asn specify how they are laid out in relation to each other.
-```css
-grid-template-areas:
-  "header header"
-  "sidebar main"
-  "footer footer";
-```
-> [!NOTE]
-> This creates a grid with three rows and two columns.
-> The named areas <sup>"header"</sup>, <sup>"sidebar"</sup>, <sup>"main"</sup>, and <sup>"footer"</sup> define the layout of elements within the grid.
-
-### <code>grid-auto-rows</code>
-
-* This property sets the defayult size for rows that haven't been explicitly defined. 
-```css
-gird-auto-rows: minmax(100px, auto));
-```
-> [!NOTE]
-> This sets the default height for unspecified rows to be a minimun of <sup>'100px'</sup> and expand to fit the content. 
-
-### <code>grid-auto-columns</code>
-
-* Similar to <sup>'grid-auto-rows'</sup>, this property sets the default width for columns that haven't been explicity defined. 
-```css
-grid-auto-columns: 100px;
-```
-> [!NOTE]
-> This sets the default width for unspecified columns to <sup>'100px'</sup>.
-
-### <code>grid-auto-flow</code>
-
-* This property determines the default placement direction of grid items when they're not explicitly placed using grid-area or related properties.
-```css
-grid-auto-flow: row dense;
-```
-> [!NOTE]
-> This sets the default location for grid items that are not explicitly allocated to follow the row leyout, and items are densely packed within the grid.
-
-### <code>column-gap</code>
-
-* This property sets the gap between columns.
-```css
-column-gap: 20px;
-```
-> [!NOTE]
-> This sets a gap of <sup>'20px'</sup> between columns.
-
-### <code>row-gap</code>
-
-* This property set a gap between rows. 
-```css
-row-gap: 20px;
-```
-> [!NOTE]
-> This sets a gap of <sup>'20px'</sup> between rows.
-
-> [!TIP]
-> An HTML and CSS example with each section seperated and labeled:
+### 🟧 1. grid-container
 ```html
 <div class="grid-container">
     <div class="grid-item">1</div>
@@ -101,176 +24,370 @@ row-gap: 20px;
 </div>
 ```
 ```css
-/* Grid Container */
 .grid-container {
     display: grid; /* Create a grid container */
-    grid-template-rows: 100px 150px; /* Define two rows with heights of 100px and 150px */
+    /* Other grid properties can be added here */
+}
+.grid-item {
+    /* Styles for grid items */
+}
+```
+#### Explanation:
+> [!NOTE]
+> In this example, we have a container with the class <code>'grid-container'</code>, which is styled as a grid container using <code>'display: grid;'</code>.
+> Inside the container, there are three grid items with the class <code>'grid-item'</code>.
+
+### 🟧 2. grid-template-rows
+* This property defines the size and number of rows in the grid.
+```html
+<div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+</div>
+```
+```css
+.grid-container {
+    display: grid;
+    grid-template-rows: 100px 150px 200px; /* Define three rows with specific heights */
+}
+```
+#### Explanation:
+> [!NOTE]
+> Here, we have defined three rows with heights of <code>100px</code>, <code>150px</code>, and <code>200px</code> respectively using <code>grid-template-rows</code>.
+
+### 🟧 3. grid-template-column
+* This property defines the size and number of columns in the grid. 
+```html
+<div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+</div>
+```
+```css
+.grid-container {
+    display: grid;
     grid-template-columns: 1fr 2fr 1fr; /* Define three columns with flexible widths */
-    grid-template-areas: 
-        "header header header" /* Define grid areas for layout */
-        "sidebar main main"; /* Define grid areas for layout */
-    grid-auto-rows: auto; /* Default height for rows not explicitly sized */
-    grid-auto-columns: auto; /* Default width for columns not explicitly sized */
-    grid-auto-flow: row; /* Default flow for items placed on the grid */
+}
+```
+#### Explanation:
+> [!NOTE]
+> This example defines three columns with flexible widths using <code>'grid-template-columns'</code>. The first column takes up one fraction of the available space, the second takes up two fractions, and the third takes up one fraction.
+
+### 🟧 4. grid-template-area
+* This property allows you to define named grid areas and specify how they are laid out in relation to each other. 
+```html
+<div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+</div>
+```
+```css
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "sidebar main main"
+        "footer footer footer"; /* Define grid areas for layout */
+}
+```
+#### Explanation:
+> [!NOTE]
+> Here, we've defined named grid areas for a typical webpage layout, including <code>header</code>, <code>sidebar</code>, <code>main content</code>, and <code>footer</code>.
+
+### 🟧 5. grid-auto-rows / grid-auto-columns
+* We'll set default sizes for rows and columns using <code>'grid-auto-rows'</code> and <code>'grid-auto-columns'</code>.
+```html
+<div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+</div>
+```
+```css
+.grid-container {
+    display: grid;
+    grid-auto-rows: 100px; /* Default height for rows not explicitly sized */
+    grid-auto-columns: 50px; /* Default width for columns not explicitly sized */
+}
+```
+#### Explanation:
+> [!NOTE]
+> This example sets default heights for rows and widths for columns that haven't been explicitly sized.
+
+### 🟧 6. grid-auto-flow
+* We'll specify the default placement direction for items using <code>'grid-auto-flow'</code>.
+```html
+<div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+</div>
+```
+```css
+.grid-container {
+    display: grid;
+    grid-auto-flow: column; /* Default location for items placed on the grid */
+}
+```
+#### Explanation:
+> [!NOTE]
+> Here, we've specified the default placement direction for items on the grid as columns. Items will be added to the grid in a column-wise order.
+
+### 🟧 7. column-gap / row-gap
+* We'll set gaps between columns and rows using <code>'column-gap'</code> and <code>'row-gap'</code>.
+```html
+<div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+</div>
+```
+```css
+.grid-container {
+    display: grid;
     column-gap: 20px; /* Set gap between columns */
     row-gap: 10px; /* Set gap between rows */
 }
-
-/* Grid Items */
-.grid-item {
-    border: 1px solid black; /* Add border for visualization */
-}
 ```
+#### Explanation:
+> [!NOTE]
+> This example sets a gap of 20px between columns and 10px between rows.
+
+> [!TIP]
+> These examples cover each section of the CSS Grid properties with simple explanations. You can combine these properties in various ways to create complex and responsive grid layout. 
 
 # ▶️ Grid properties for container
 
-### <code>grid-template-columns</code>
-
-* This property defines the size and number of columns in the grid.
-* It accepts various units such as <sup>pixels ('px')</sup>, <sup>percentages ('%')</sup>, or the <sup>'repeat()'</sup> function for repetitive column sizes.
-```css
-grid-template-columns: 100px 1fr 2fr;
+### 🟦 1. grid-template-columns / grid-template-rows
+```html
+<div class="container">
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
+  <div class="item">Item 3</div>
+</div>
 ```
-> [!NOTE]
-> This creates three columns with sizes of <sup>'100px'</sup>, one fraction of the available space, and two fractions of the available space, respectively.
-
-### <code>grid-template-rows:</code>
-
-* This property defines the size and number of rows in the grid, similar to <sup>'grid-template-columns'</sup>.
 ```css
-grid-template-rows: 100px 200px;
+.container {
+  display: grid;
+  /* Define the sizes of columns */
+  grid-template-columns: 100px 200px auto; /* measurement units */
+  /* Define the sizes of rows */
+  grid-template-rows: 50px 100px; /* measurement units */
+}
+
+.item {
+  border: 1px solid black;
+}
 ```
+#### Explanation:
 > [!NOTE]
-> This creates two rows with heights of <sup>'100px'</sup> and <sup>'200px'</sup> respectively.
+> <code>'grid-template-columns'</code> and <code>'grid-template-rows'</code> define the sizes of the columns and rows respectively within the grid.
+> Can accept different measurement units such as pixels <code>('px')</code>, percentages <code>('%')</code>, or the auto <code>'auto'</code> keyword.
+> In this example, the container has three columns with widths of <code>100px</code>, <code>200px</code>, and <b>automatically<b> adjusting to the content size respectively. It has two rows with heights of <code>50px</code> and <code>100px</code> respectively.
 
-### <code>grid-auto-columns</code>
-
-* This property sets the default size for columns that haven't been explicitly defined.
+### 🟦 2. grid-auto-columns / grid-auto-rows
+```html
+<div class="container">
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
+</div>
+```
 ```css
-grid-auto-columns: 50px;
+.container {
+  display: grid;
+  /* Set default width for columns */
+  grid-auto-columns: 150px; /* measurement unit (fixed value for all columns) */
+  /* Set default height for rows */
+  grid-auto-rows: 100px; /* measurement unit (fixed value for all rows) */
+}
+
+.item {
+  border: 1px solid black;
+}
 ```
+#### Explanation:
 > [!NOTE]
-> This sets the default width for unspecified columns to <sup>'50px'</sup>.
+> <code>'grid-auto-columns'</code> and <code>'grid-auto-rows'</code> determine the default size for columns and rows respectively that have not been explicitly defined.
+> In this example, all columns will have a width of <code>150px</code> and all rows will have a height of <code>100px</code> by default.
 
-### <code>grid-auto-rows</code>
-
-* Similar to <sup>'grid-auto-columns'</sup>, this property sets the default height for rows that haven't been explicitly defined.
+### 🟦 3. grid-template
+```html
+<div class="container">
+  <div class="header">Header</div>
+  <div class="main">Main Content</div>
+  <div class="right">Right Sidebar</div>
+  <div class="footer">Footer</div>
+</div>
+```
 ```css
-grid-auto-rows: 1fr;
-```
-> [!NOTE]
-> This sets the default height for unspecified rows to take up an equal share of the availabe space. 
+.container {
+  display: grid;
+  /* Define the grid layout */
+  grid-template: 
+    "header header" auto
+    "main right" 75vh
+    "footer footer" 20rem;
+}
 
-### <code>grid-template</code>
-
-* This shorthand property allows you to define the grid template in a single line, specifying both columns and rows along with their sizes.
-```css
-grid-template: "header header" auto
-                "main right" 75vh
-                "footer footer" 20rem;
+.header, .main, .right, .footer {
+  border: 1px solid black;
+}
 ```
+#### Explanation:
 > [!NOTE]
-> This defines a grid with three rows and two columns, where the first row is auto sized, and second row takes up 75% of the viewport height, and the third row is <sup>'20rem'</sup> in height. The two columns are named <sup>"header"</sup> and <sup>"right"</sup>, respectively.
+> <code>'grid-template'</code> allows you to define the grid structure by specifying the names of grid areas and their sizes.
+> In this example, the grid has three rows and two columns. The first row contains the header, the second row contains the main content and the right sidebar, and the third row contains the footer.
+> The sizes of the rows are specified using different units <code>('vh')</code> and <code>('rem')</code>.
 
 # ▶️ Gap
 
-### <code>grid-gap</code>
-
-* This is a shorthand property for setting the gap between rows and columns in a CSS Grid Layout.
-```css
-grid-gap: 10px 20px;
+### 🟥 1. grid-gap
+```html
+<div class="container">
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
+</div>
 ```
-> [!NOTE]
-> This sets a gap of <sup>'10px'</sup> between rows and <sup>'20px'</sup> between columns.
-
-### <code>grid-column-gap</code>
-
-* This property specifically determines the gap between columns.
 ```css
-grid-column-gap: 15px;
+.container {
+  display: grid;
+  /* Determine the gap between rows and columns */
+  grid-gap: 20px; /* measurement units */
+}
+
+.item {
+  border: 1px solid black;
+}
 ```
+#### Explanation:
 > [!NOTE]
-> This sets a gap of <sup>'15px'</sup> between columns.
+> <code>'grid-gap'</code> determines the gap between rows and columns within the grid.
+> It accepts different measurement units such as pixels <code>('px')</code>, percentages <code>('%')</code>, etc.
+> In this example, there will be a <code>20px</code> gap between rows and columns.
 
-### <code>grid-row-gap</code>
-
-* This property specifically determines the gap between rows.
+### 🟥 2. grid-column-gap
+```html
+<div class="container">
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
+</div>
+```
 ```css
-grid-row-gap: 1em;
+.container {
+  display: grid;
+  /* Determine the gap between columns */
+  grid-column-gap: 30px; /* measurement units */
+}
+
+.item {
+  border: 1px solid black;
+}
 ```
+#### Explanation:
 > [!NOTE]
-> This sets a gap of '1em' between rows.
+> <code>'grid-column-gap'</code> determines the gap between columns within the grid.
+> It accepts different measurement units such as pixels <code>('px')</code>, percentages <code>('%')</code>, etc.
+> In this example, there will be a <code>30px</code> gap between columns.
+
+### 🟥 3. grid-row-gap
+```html
+<div class="container">
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
+</div>
+```
+```css
+.container {
+  display: grid;
+  /* Determine the gap between rows */
+  grid-row-gap: 10px 20px; /* m-unit-1 m-unit-2 */
+}
+
+.item {
+  border: 1px solid black;
+}
+```
+#### Explanation:
+> [!NOTE]
+> <code>'grid-row-gap'</code> determines the gap between rows within the grid.
+> It accepts multiple values, each representing the gap between adjacent rows.
+> In this example, there will be a gap of <code>10px</code> between the first and second rows, and a gap of <code>20px</code> between the second and third rows. 
 
 # ▶️ Alignment
 
-### <code>justify-items</code>
-
-* This property defines the default alignment of grid items along the inline (main) axis of the grid.
+### 🟩 1. justify-items
 ```html
-<div class="grid-container">
-    <div class="grid-item">Item 1</div>
-    <div class="grid-item">Item 2</div>
-    <div class="grid-item">Item 3</div>
+<div class="container">
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
 </div>
 ```
 ```css
-.grid-container {
-    display: grid;
-    justify-items: center; /* Align items along the inline axis to the center */
+.container {
+  display: grid;
+  justify-items: start; /* Defines the default space allotted to each item on the grid */
 }
 
-.grid-item {
-    /* Additional styling for grid items */
+.item {
+  border: 1px solid black;
 }
 ```
+#### Explanation:
 > [!NOTE]
-> In this example, all grid items will be centered horizontally within their respective grid cells. 
+> <code>'justify-items'</code> defines the default space that is allotted to each item on the grid along the inline axis (horizontally).
+> Values can be <code>'start'</code>, <code>'center'</code>, <code>'end'</code>, or <code>'stretch'</code>.
+> In this example, items will be aligned to the start of the grid along the inline axis.
 
-### <code>align-items</code> 
-
-* This property defines the default alignment of grid items along the block (cross) axis of the gird.
+### 🟩 2. align-items
 ```html
-<div class="grid-container">
-    <div class="grid-item">Item 1</div>
-    <div class="grid-item">Item 2</div>
-    <div class="grid-item">Item 3</div>
+<div class="container">
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
 </div>
 ```
 ```css
-.grid-container {
-    display: grid;
-    align-items: center; /* Align items along the block axis to the center */
+.container {
+  display: grid;
+  align-items: start; /* Defines the default space related to an item along the grid’s block axis */
 }
 
-.grid-item {
-    /* Additional styling for grid items */
+.item {
+  border: 1px solid black;
 }
 ```
+#### Explanation:
 > [!NOTE]
-> In this example, all grid items will be centered vertically within their respective grid cells. 
+> <code>'align-items'</code> defines the default space related to an item along the grid's block axis (vertically).
+> Values can be <code>'start'</code>, <code>'center'</code>, <code>'end'</code>, or <code>'stretch'</code>.
+> In this example, items will be aligned to the start of the grid along the block axis.
 
-### <code>place-items</code>
 
-* This shorthand property combines <sup>'justify-items'</sup> and <sup>'align-items'</sup> to  define the default alignment of grid items along both the inline and block axis of the grid. 
+### 🟩 3. place-items
 ```html
-<div class="grid-container">
-    <div class="grid-item">Item 1</div>
-    <div class="grid-item">Item 2</div>
-    <div class="grid-item">Item 3</div>
+<div class="container">
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
 </div>
 ```
 ```css
-.grid-container {
-    display: grid;
-    place-items: center; /* Align items along both axes to the center */
+.container {
+  display: grid;
+  /* Shorthand for justify-items and align-items */
+  place-items: start stretch; 
 }
 
-.grid-item {
-    /* Additional styling for grid items */
+.item {
+  border: 1px solid black;
 }
 ```
+#### Explanation:
 > [!NOTE]
-> In this example, all grid items will be centered both horizontally and vetically within their respective grid cells.These alignment properties provide a convenient way to control the positioning of grid items within a CSS grid. Allowing for flexible and responsive layout. 
+> <code>'place-items'</code> is a shorthand property for <code>'justify-items'</code> and <code>'align-items'</code>.
+> It allows to align items with the block and inline directions simultaneously.
+> In this example, items wil be aligned to the start along the inline axis and streched along the block 
 
 
 
