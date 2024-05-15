@@ -2,8 +2,11 @@
 
 ### 🟧 [1. grid-container](#1-grid-container)
 ### 🟧 [2. grid-template-rows](#grid-template-rows)
-
-
+### 🟧 [3. grid-template-column](#3-grid-template-column)
+### 🟧 [4. grid-template-area](#4-grid-template-area)
+### 🟧 [5. grid-auto-rows / grid-auto-columns](#5-grid-auto-rows--grid-auto-columns)
+### 🟧 [6. grid-auto-flow](#6-grid-auto-flow)
+### 🟧 [7. column-gap / row-gap](#7-column-gap--row-gap)
 
 # ▶️ Grid
 🔸 The syntax for creating a grid:
