@@ -29,6 +29,14 @@
 ### 5.2 [align-content](#align-content)
 ### 5.3 [place-content](#place-content)
 
+## ▶️ Positioning
+### 6.1 [grid-auto-flow](#grid-auto-flow)
+### 6.2 [grid-auto-columns](#grid-auto-columns)
+### 6.3 [grid-auto-rows](#grid-auto-rows)
+
+## ▶️ Grid properties for items (child)
+### 7.1 [grid-column](#grid-column)
+### 7.2 [grid-column-start / end](#grid-column-start--end)
 
 ### grid-container
 ```html
