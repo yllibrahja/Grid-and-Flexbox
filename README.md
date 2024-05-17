@@ -360,7 +360,7 @@
 > In this example, items will be aligned to the start of the grid along the block axis.
 
 
-### 4.3 place-items
+### 4.3 place-items {#43-place-items}
 ```html
 <div class="container">
   <div class="item">Item 1</div>
