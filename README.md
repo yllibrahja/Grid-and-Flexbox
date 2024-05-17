@@ -15,9 +15,9 @@
 ### [2.3 grid-template](#23-grid-template)
 
 ## ▶️ Gap
-### [3.1 grid-gap](#31-grid-gap)
-### [3.2 grid-column-gap](#32-grid-column-gap)
-### [3.3 grid-row-gap](#33-grid-row-gap)
+### [3.1 grid-gap](#grid-gap)
+### [3.2 grid-column-gap](#grid-column-gap)
+### [3.3 grid-row-gap](#grid-row-gap)
 
 ## ▶️ Alignment
 ### 4.1 [justify-items](#justify-items)
@@ -244,7 +244,7 @@
 
 # ▶️ Gap
 
-### 3.1 grid-gap
+### grid-gap
 ```html
 <div class="container">
   <div class="item">Item 1</div>
@@ -267,7 +267,7 @@
 > It accepts different measurement units such as pixels <code>('px')</code>, percentages <code>('%')</code>, etc.
 > In this example, there will be a <code>20px</code> gap between rows and columns.
 
-### 3.2 grid-column-gap
+### grid-column-gap
 ```html
 <div class="container">
   <div class="item">Item 1</div>
@@ -290,7 +290,7 @@
 > It accepts different measurement units such as pixels <code>('px')</code>, percentages <code>('%')</code>, etc.
 > In this example, there will be a <code>30px</code> gap between columns.
 
-### 3.3 grid-row-gap
+### grid-row-gap
 ```html
 <div class="container">
   <div class="item">Item 1</div>
