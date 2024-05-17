@@ -36,7 +36,14 @@
 
 ## ▶️ Grid properties for items (child)
 ### 7.1 [grid-column](#grid-column)
-### 7.2 [grid-column-start / end](#grid-column-start--end)
+### 7.2 [grid-column-start / grid-column-end](#grid-column-start--grid-column-end)
+### 7.3 [grid-row](#grid-row)
+### 7.4 [grid-row-start / grid-row-end](#grid-row-start--grid-row-end)
+
+## ▶️ Justification and Alignment
+### 8.1 [justify-self](#justify-self)
+### 8.2 [align-self](#align-self)
+### 8.3 [place-self](#place-self)
 
 ### grid-container
 ```html
@@ -398,7 +405,7 @@
 
 # ▶️ Justification
 
-### 5.1 justify-content
+### justify-content
 ```html
 <div class="container">
   <div class="item">Item 1</div>
@@ -420,7 +427,7 @@
 > Values can be <code>'start'</code>, <code>'center'</code>, <code>'end'</code>, <code>'stretch'</code>, <code>'space-between'</code>, <code>'space-evenly'</code>, or <code>'space-around'</code>.
 > In this example, items will be evely distributed along the main axis with equal space between.
 
-### 5.2 align-content
+### align-content
 ```html
 <div class="container">
   <div class="item">Item 1</div>
@@ -442,7 +449,7 @@
 > Values can be <code>'start'</code>, <code>'center'</code>, <code>'end'</code>, <code>'stretch'</code>, <code>'space-between'</code>, <code>'space-evenly'</code>, or <code>'space-around'</code>.
 > In this example, items will be centered along the corss axis and block axis.
 
-### 5.3 place-content
+### place-content
 ```html
 <div class="container">
   <div class="item">Item 1</div>
@@ -467,7 +474,7 @@
 
 # ▶️ Positioning
 
-### 6.1 grid-auto-flow
+### grid-auto-flow
 ```html
 <div class="container">
   <div class="item">Item 1</div>
@@ -490,7 +497,7 @@
 > Values can be <code>'row'</code>, <code>'column'</code>, or <code>'dense'</code>.
 > In this example, items will be placed row by row within the grid.
 
-### 6.2 grid-auto-columns
+### grid-auto-columns
 ```html
 <div class="container">
   <div class="item">Item 1</div>
@@ -512,7 +519,7 @@
 > It accept different measurement units such as pixels ('px'), percentages ('%'), etc.
 > In this example, columns without specified size will have a width of <code>100px</code>.
 
-### 6.3 grid-auto-rows
+### grid-auto-rows
 ```html
 <div class="container">
   <div class="item">Item 1</div>
@@ -536,7 +543,7 @@
 
 # ▶️ Grid properties for items (child)
 
-### 7.1 grid-column
+### grid-column
 ```html
 <div class="container">
   <div class="item">Item</div>
@@ -558,7 +565,7 @@
 > the syntax is <code>'start / end'</code>, where start and end are column positions.
 > In this example, the item starts at the first column and ends at the second column. 
 
-### 7.2 grid-column-start / end
+### grid-column-start / grid-column-end
 ```html
 <div class="container">
   <div class="item">Item</div>
@@ -581,7 +588,7 @@
 > <code>'grid-column-end'</code> determines the ending column position of the item on the grid.
 > In this example, the item starts at the first column and ends at the second column.
 
-### 7.3 grid-row
+### grid-row
 ```html
 <div class="container">
   <div class="item">Item</div>
@@ -603,7 +610,7 @@
 > The syntax is <code>'start / end'</code>, where start and end are row positions.
 > In this example, the item starts at the first row and ends a the second row.
 
-### 7.4 grid-row-start / end
+### grid-row-start / grid-row-end
 ```html
 <div class="container">
   <div class="item">Item</div>
@@ -628,7 +635,7 @@
 
 # ▶️ Justification and Alignment
 
-### 8.1 justify-self
+### justify-self
 ```html
 <div class="container">
   <div class="item">Item</div>
@@ -649,7 +656,7 @@
 > Values can be <code>'start'</code>, <code>'center'</code>, <code>'end'</code>, or <code>'stretch'</code>.
 > In this example, the item will be aligned to the start of its grid cell along the inline axis.
 
-### 8.2 align-self
+### align-self
 ```html
 <div class="container">
   <div class="item">Item</div>
@@ -670,7 +677,7 @@
 > Values can be <code>'start'</code>, <code>'center'</code>, <code>'end'</code>, or <code>'stretch'</code>.
 > In this example, the item will be aligned to the start of its grid cell along the block axis
 
-### 8.3 place-self
+### place-self
 ```html
 <div class="container">
   <div class="item">Item</div>
