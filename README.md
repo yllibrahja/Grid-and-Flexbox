@@ -1,4 +1,4 @@
-# Grid and Flexbox cheat sheet
+# CSS Grid cheat sheet
 
 ## ▶️ Grid
 ### 1.1 [grid-container](#grid-container)
