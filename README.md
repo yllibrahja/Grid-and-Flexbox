@@ -10,19 +10,19 @@
 ### [1.7 column-gap / row-gap](#17-column-gap--row-gap)
 
 ## ▶️ Grid properties for container
-### [2.1 grid-template-columns / grid-template-rows](#11-grid-template-columns--grid-template-rows)
-### [2.2 grid-auto-columns / grid-auto-rows](#12-grid-auto-columns--grid-auto-rows)
-### [2.3 grid-template](#13-grid-template)
+### [2.1 grid-template-columns / grid-template-rows](#21-grid-template-columns--grid-template-rows)
+### [2.2 grid-auto-columns / grid-auto-rows](#22-grid-auto-columns--grid-auto-rows)
+### [2.3 grid-template](#23-grid-template)
 
 ## ▶️ Gap
-### [3.1 grid-gap](#11-grid-gap)
-### [3.2 grid-column-gap](#12-grid-column-gap)
-### [3.3 grid-row-gap](#13-grid-row-gap)
+### [3.1 grid-gap](#31-grid-gap)
+### [3.2 grid-column-gap](#32-grid-column-gap)
+### [3.3 grid-row-gap](#33-grid-row-gap)
 
 ## ▶️ Alignment
-### [4.1 justify-items](#11-justify-items)
-### [4.2 align-items](#12-align-items)
-### [4.3 place-items](#13-place-items)
+### [4.1 justify-items](#41-justify-items)
+### [4.2 align-items](#42-align-items)
+### [4.3 place-items](#43-place-items)
 
 
 ### 1.1 grid-container
