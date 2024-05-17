@@ -1,31 +1,36 @@
 # Grid-and-Flexbox cheat sheet
 
 ## ▶️ Grid
-### [1.1 grid-container](#11-grid-container)
-### [1.2 grid-template-rows](#12-grid-template-rows)
-### [1.3 grid-template-column](#13-grid-template-column)
-### [1.4 grid-template-area](#14-grid-template-area)
-### [1.5 grid-auto-rows / grid-auto-columns](#15-grid-auto-rows--grid-auto-columns)
-### [1.6 grid-auto-flow](#16-grid-auto-flow)
-### [1.7 column-gap / row-gap](#17-column-gap--row-gap)
+### 1.1 [grid-container](#grid-container)
+### 1.2 [grid-template-rows](#grid-template-rows)
+### 1.3 [grid-template-column](#grid-template-column)
+### 1.4 [grid-template-area](#grid-template-area)
+### 1.5 [grid-auto-rows / grid-auto-columns](#grid-auto-rows--grid-auto-columns)
+### 1.6 [grid-auto-flow](#grid-auto-flow)
+### 1.7 [column-gap / row-gap](#column-gap--row-gap)
 
 ## ▶️ Grid properties for container
-### [2.1 grid-template-columns / grid-template-rows](#21-grid-template-columns--grid-template-rows)
-### [2.2 grid-auto-columns / grid-auto-rows](#22-grid-auto-columns--grid-auto-rows)
-### [2.3 grid-template](#23-grid-template)
+### 2.1 [grid-template-columns / grid-template-rows](#grid-template-columns--grid-template-rows)
+### 2.2 [grid-auto-columns / grid-auto-rows](#grid-auto-columns--grid-auto-rows)
+### 2.3 [grid-template](#grid-template)
 
 ## ▶️ Gap
-### [3.1 grid-gap](#grid-gap)
-### [3.2 grid-column-gap](#grid-column-gap)
-### [3.3 grid-row-gap](#grid-row-gap)
+### 3.1 [grid-gap](#grid-gap)
+### 3.2 [grid-column-gap](#grid-column-gap)
+### 3.3 [grid-row-gap](#grid-row-gap)
 
 ## ▶️ Alignment
 ### 4.1 [justify-items](#justify-items)
 ### 4.2 [align-items](#align-items)
 ### 4.3 [place-items](#place-items)
 
+## ▶️ Justification
+### 5.1 [justify-content](#justify-content)
+### 5.2 [align-content](#align-content)
+### 5.3 [place-content](#place-content)
 
-### 1.1 grid-container
+
+### grid-container
 ```html
 <div class="grid-container">
     <div class="grid-item">1</div>
@@ -46,7 +51,7 @@
 > In this example, we have a container with the class <code>'grid-container'</code>, which is styled as a grid container using <code>'display: grid;'</code>.
 > Inside the container, there are three grid items with the class <code>'grid-item'</code>.
 
-### 1.2 grid-template-rows
+### grid-template-rows
 * This property defines the size and number of rows in the grid.
 ```html
 <div class="grid-container">
@@ -64,7 +69,7 @@
 > [!NOTE]
 > Here, we have defined three rows with heights of <code>100px</code>, <code>150px</code>, and <code>200px</code> respectively using <code>grid-template-rows</code>.
 
-### 1.3 grid-template-column
+### grid-template-column
 * This property defines the size and number of columns in the grid. 
 ```html
 <div class="grid-container">
@@ -82,7 +87,7 @@
 > [!NOTE]
 > This example defines three columns with flexible widths using <code>'grid-template-columns'</code>. The first column takes up one fraction of the available space, the second takes up two fractions, and the third takes up one fraction.
 
-### 1.4 grid-template-area
+### grid-template-area
 * This property allows you to define named grid areas and specify how they are laid out in relation to each other. 
 ```html
 <div class="grid-container">
@@ -103,7 +108,7 @@
 > [!NOTE]
 > Here, we've defined named grid areas for a typical webpage layout, including <code>header</code>, <code>sidebar</code>, <code>main content</code>, and <code>footer</code>.
 
-### 1.5 grid-auto-rows / grid-auto-columns
+### grid-auto-rows / grid-auto-columns
 * We'll set default sizes for rows and columns using <code>'grid-auto-rows'</code> and <code>'grid-auto-columns'</code>.
 ```html
 <div class="grid-container">
@@ -122,7 +127,7 @@
 > [!NOTE]
 > This example sets default heights for rows and widths for columns that haven't been explicitly sized.
 
-### 1.6 grid-auto-flow
+### grid-auto-flow
 * We'll specify the default placement direction for items using <code>'grid-auto-flow'</code>.
 ```html
 <div class="grid-container">
@@ -140,7 +145,7 @@
 > [!NOTE]
 > Here, we've specified the default placement direction for items on the grid as columns. Items will be added to the grid in a column-wise order.
 
-### 1.7 column-gap / row-gap
+### column-gap / row-gap
 * We'll set gaps between columns and rows using <code>'column-gap'</code> and <code>'row-gap'</code>.
 ```html
 <div class="grid-container">
@@ -164,7 +169,7 @@
 
 # ▶️ Grid properties for container
 
-### 2.1 grid-template-columns / grid-template-rows
+### grid-template-columns / grid-template-rows
 ```html
 <div class="container">
   <div class="item">Item 1</div>
@@ -190,7 +195,7 @@
 > Can accept different measurement units such as pixels <code>('px')</code>, percentages <code>('%')</code>, or the auto <code>'auto'</code> keyword.
 > In this example, the container has three columns with widths of <code>100px</code>, <code>200px</code>, and <b>automatically<b> adjusting to the content size respectively. It has two rows with heights of <code>50px</code> and <code>100px</code> respectively.
 
-### 2.2 grid-auto-columns / grid-auto-rows
+### grid-auto-columns / grid-auto-rows
 ```html
 <div class="container">
   <div class="item">Item 1</div>
@@ -214,7 +219,7 @@
 > <code>'grid-auto-columns'</code> and <code>'grid-auto-rows'</code> determine the default size for columns and rows respectively that have not been explicitly defined.
 > In this example, all columns will have a width of <code>150px</code> and all rows will have a height of <code>100px</code> by default.
 
-### 2.3 grid-template
+### grid-template
 ```html
 <div class="container">
   <div class="header">Header</div>
