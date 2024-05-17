@@ -22,7 +22,7 @@
 ## ▶️ Alignment
 ### [4.1 justify-items](#41-justify-items)
 ### [4.2 align-items](#4.2-align-items)
-### [4.3 place-items]({#4.3-place-items})
+### [4.3 place-items] {#4.3-place-items}
 
 
 ### 1.1 grid-container
