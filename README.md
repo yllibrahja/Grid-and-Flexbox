@@ -1,9 +1,15 @@
 # Grid-and-Flexbox cheat sheet
 
-| Grid         | Grid properties for container | Gap    | Alignment |
-|:-------------|:--------------|:--------------|:---------------|
-| [1.1 grid-container](#11-grid-container) | [1.1 grid-template-columns / grid-template-rows](#11-grid-template-columns--grid-template-rows) | [1.1 grid-gap](#11-grid-gap) | [1.1 justify-items](#11-justify-items) |
-| [1.2 grid-template-rows](#12-grid-template-rows) | [1.2 grid-auto-columns / grid-auto-rows](#12-grid-auto-columns--grid-auto-rows) | [1.2 grid-column-gap](#12-grid-column-gap) | [1.2 align-items](#12-align-items) |
+| **Grid** | **Grid properties for container** |
+|:-------------|:--------------|
+| 💠[1.1 grid-container](#11-grid-container) | [1.1 grid-template-columns / grid-template-rows](#11-grid-template-columns--grid-template-rows) | 
+| [1.2 grid-template-rows](#12-grid-template-rows) | [1.2 grid-auto-columns / grid-auto-rows](#12-grid-auto-columns--grid-auto-rows) |
+
+
+| **Gap** | **Alignment** |
+|:--------------|:---------------|
+| [1.1 grid-gap](#11-grid-gap) | [1.1 justify-items](#11-justify-items) |
+| [1.2 grid-column-gap](#12-grid-column-gap) | [1.2 align-items](#12-align-items) |
 
 
 
