@@ -1,4 +1,4 @@
-# Grid-and-Flexbox cheat sheet
+# Grid and Flexbox cheat sheet
 
 ## ▶️ Grid
 ### 1.1 [grid-container](#grid-container)
@@ -160,8 +160,8 @@
 }
 ```
 > [!NOTE]
-> Here, we've specified the default placement direction for items on the grid as columns.<br>
-> Items will be added to the grid in a column-wise order.
+> Here, we've specified the default placement direction for items on the grid as columns.
+> > Items will be added to the grid in a column-wise order.
 
 ### column-gap / row-gap
 * We'll set gaps between columns and rows using `'column-gap'` and `'row-gap'`.
@@ -183,8 +183,8 @@
 > This example sets a gap of 20px between columns and 10px between rows.
 
 > [!TIP]
-> These examples cover each section of the CSS Grid properties with simple explanations.<br>
-> You can combine these properties in various ways to create complex and responsive grid layout. 
+> These examples cover each section of the CSS Grid properties with simple explanations.
+> > You can combine these properties in various ways to create complex and responsive grid layout. 
 
 # ▶️ Grid properties for container
 
@@ -289,8 +289,7 @@
 }
 ```
 > [!NOTE]
-> `'grid-gap'` determines the gap between rows and columns within the grid.<br>
-> It accepts different measurement units such as pixels (`'px'`), percentages (`'%'`), etc.
+> `'grid-gap'` determines the gap between rows and columns within the grid. It accepts different measurement units such as pixels (`'px'`), percentages (`'%'`), etc.
 > > In this example, there will be a `20px` gap between rows and columns.
 
 ### grid-column-gap
@@ -312,8 +311,7 @@
 }
 ```
 > [!NOTE]
-> `'grid-column-gap'`determines the gap between columns within the grid.<br>
-> It accepts different measurement units such as pixels (`'px'`), percentages (`'%'`), etc.
+> `'grid-column-gap'`determines the gap between columns within the grid. It accepts different measurement units such as pixels (`'px'`), percentages (`'%'`), etc.
 > > In this example, there will be a `30px` gap between columns.
 
 ### grid-row-gap
@@ -335,8 +333,7 @@
 }
 ```
 > [!NOTE]
-> `'grid-row-gap'` determines the gap between rows within the grid.<br>
-> It accepts multiple values, each representing the gap between adjacent rows.
+> `'grid-row-gap'` determines the gap between rows within the grid. It accepts multiple values, each representing the gap between adjacent rows.
 > > In this example, there will be a gap of `10px` between the first and second rows, and a gap of `20px` between the second and third rows. 
 
 # ▶️ Alignment
@@ -359,9 +356,9 @@
 }
 ```
 > [!NOTE]
-> `'justify-items'` defines the default space that is allotted to each item on the grid along the inline axis (horizontally).<br>
-> Values can be `'start'`, `'center'`, `'end'`, or `'stretch'`.
-> > In this example, items will be aligned to the start of the grid along the inline axis.
+> `'justify-items'` defines the default space that is allotted to each item on the grid along the inline axis (horizontally).
+> > Values can be `'start'`, `'center'`, `'end'`, or `'stretch'`.
+> > > In this example, items will be aligned to the start of the grid along the inline axis.
 
 ### align-items
 ```html
@@ -381,9 +378,9 @@
 }
 ```
 > [!NOTE]
-> `'align-items'` defines the default space related to an item along the grid's block axis (vertically).<br>
-> Values can be `'start'`, `'center'`>, `'end'`, or `'stretch'`.
-> > In this example, items will be aligned to the start of the grid along the block axis.
+> `'align-items'` defines the default space related to an item along the grid's block axis (vertically).
+> > Values can be `'start'`, `'center'`>, `'end'`, or `'stretch'`.
+> > > In this example, items will be aligned to the start of the grid along the block axis.
 
 
 ### place-items
@@ -405,9 +402,9 @@
 }
 ```
 > [!NOTE]
-> `'place-items'` is a shorthand property for `'justify-items'` and `'align-items'`.<br>
-> It allows to align items with the block and inline directions simultaneously.
-> > In this example, items wil be aligned to the start along the inline axis and streched along the block 
+> `'place-items'` is a shorthand property for `'justify-items'` and `'align-items'`.
+> > It allows to align items with the block and inline directions simultaneously.
+> > > In this example, items wil be aligned to the start along the inline axis and streched along the block 
 
 # ▶️ Justification
 
