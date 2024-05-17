@@ -1,12 +1,8 @@
 # Grid-and-Flexbox cheat sheet
 
-### 🟧 [1. grid-container](#1-grid-container)
-### 🟧 [2. grid-template-rows](#grid-template-rows)
-### 🟧 [3. grid-template-column](#3-grid-template-column)
-### 🟧 [4. grid-template-area](#4-grid-template-area)
-### 🟧 [5. grid-auto-rows / grid-auto-columns](#5-grid-auto-rows--grid-auto-columns)
-### 🟧 [6. grid-auto-flow](#6-grid-auto-flow)
-### 🟧 [7. column-gap / row-gap](#7-column-gap--row-gap)
+[grid-template-columns / grid-template-rows](#11-grid-template-columns--grid-template-rows)
+[grid-auto-columns / grid-auto-rows](#12-grid-auto-columns--grid-auto-rows)
+
 
 # ▶️ Grid
 🔸 The syntax for creating a grid:
@@ -162,7 +158,7 @@ selection {
 
 # ▶️ Grid properties for container
 
-### 🟦 1. grid-template-columns / grid-template-rows
+### 1.1 grid-template-columns / grid-template-rows
 ```html
 <div class="container">
   <div class="item">Item 1</div>
@@ -188,7 +184,7 @@ selection {
 > Can accept different measurement units such as pixels <code>('px')</code>, percentages <code>('%')</code>, or the auto <code>'auto'</code> keyword.
 > In this example, the container has three columns with widths of <code>100px</code>, <code>200px</code>, and <b>automatically<b> adjusting to the content size respectively. It has two rows with heights of <code>50px</code> and <code>100px</code> respectively.
 
-### 🟦 2. grid-auto-columns / grid-auto-rows
+### 1.2 grid-auto-columns / grid-auto-rows
 ```html
 <div class="container">
   <div class="item">Item 1</div>
