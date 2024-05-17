@@ -10,19 +10,19 @@
 ### [1.7 column-gap / row-gap](#17-column-gap--row-gap)
 
 ## ▶️ Grid properties for container
-### [1.1 grid-template-columns / grid-template-rows](#11-grid-template-columns--grid-template-rows)
-### [1.2 grid-auto-columns / grid-auto-rows](#12-grid-auto-columns--grid-auto-rows)
-### [1.3 grid-template](#13-grid-template)
+### [2.1 grid-template-columns / grid-template-rows](#11-grid-template-columns--grid-template-rows)
+### [2.2 grid-auto-columns / grid-auto-rows](#12-grid-auto-columns--grid-auto-rows)
+### [2.3 grid-template](#13-grid-template)
 
 ## ▶️ Gap
-### [1.1 grid-gap](#11-grid-gap)
-### [1.2 grid-column-gap](#12-grid-column-gap)
-### [1.3 grid-row-gap](#13-grid-row-gap)
+### [3.1 grid-gap](#11-grid-gap)
+### [3.2 grid-column-gap](#12-grid-column-gap)
+### [3.3 grid-row-gap](#13-grid-row-gap)
 
 ## ▶️ Alignment
-### [1.1 justify-items](#11-justify-items)
-### [1.2 align-items](#12-align-items)
-### [1.3 place-items](#13-place-items)
+### [4.1 justify-items](#11-justify-items)
+### [4.2 align-items](#12-align-items)
+### [4.3 place-items](#13-place-items)
 
 
 ### 1.1 grid-container
@@ -164,7 +164,7 @@
 
 # ▶️ Grid properties for container
 
-### 1.1 grid-template-columns / grid-template-rows
+### 2.1 grid-template-columns / grid-template-rows
 ```html
 <div class="container">
   <div class="item">Item 1</div>
@@ -190,7 +190,7 @@
 > Can accept different measurement units such as pixels <code>('px')</code>, percentages <code>('%')</code>, or the auto <code>'auto'</code> keyword.
 > In this example, the container has three columns with widths of <code>100px</code>, <code>200px</code>, and <b>automatically<b> adjusting to the content size respectively. It has two rows with heights of <code>50px</code> and <code>100px</code> respectively.
 
-### 1.2 grid-auto-columns / grid-auto-rows
+### 2.2 grid-auto-columns / grid-auto-rows
 ```html
 <div class="container">
   <div class="item">Item 1</div>
@@ -214,7 +214,7 @@
 > <code>'grid-auto-columns'</code> and <code>'grid-auto-rows'</code> determine the default size for columns and rows respectively that have not been explicitly defined.
 > In this example, all columns will have a width of <code>150px</code> and all rows will have a height of <code>100px</code> by default.
 
-### 1.3 grid-template
+### 2.3 grid-template
 ```html
 <div class="container">
   <div class="header">Header</div>
@@ -244,7 +244,7 @@
 
 # ▶️ Gap
 
-### 1.1 grid-gap
+### 3.1 grid-gap
 ```html
 <div class="container">
   <div class="item">Item 1</div>
@@ -267,7 +267,7 @@
 > It accepts different measurement units such as pixels <code>('px')</code>, percentages <code>('%')</code>, etc.
 > In this example, there will be a <code>20px</code> gap between rows and columns.
 
-### 1.2 grid-column-gap
+### 3.2 grid-column-gap
 ```html
 <div class="container">
   <div class="item">Item 1</div>
@@ -290,7 +290,7 @@
 > It accepts different measurement units such as pixels <code>('px')</code>, percentages <code>('%')</code>, etc.
 > In this example, there will be a <code>30px</code> gap between columns.
 
-### 1.3 grid-row-gap
+### 3.3 grid-row-gap
 ```html
 <div class="container">
   <div class="item">Item 1</div>
@@ -315,7 +315,7 @@
 
 # ▶️ Alignment
 
-### 1.1 justify-items
+### 4.1 justify-items
 ```html
 <div class="container">
   <div class="item">Item 1</div>
@@ -337,7 +337,7 @@
 > Values can be <code>'start'</code>, <code>'center'</code>, <code>'end'</code>, or <code>'stretch'</code>.
 > In this example, items will be aligned to the start of the grid along the inline axis.
 
-### 1.2 align-items
+### 4.2 align-items
 ```html
 <div class="container">
   <div class="item">Item 1</div>
@@ -360,7 +360,7 @@
 > In this example, items will be aligned to the start of the grid along the block axis.
 
 
-### 1.3 place-items
+### 4.3 place-items
 ```html
 <div class="container">
   <div class="item">Item 1</div>
@@ -385,7 +385,7 @@
 
 # ▶️ Justification
 
-### 1.1 justify-content
+### 5.1 justify-content
 ```html
 <div class="container">
   <div class="item">Item 1</div>
@@ -407,7 +407,7 @@
 > Values can be <code>'start'</code>, <code>'center'</code>, <code>'end'</code>, <code>'stretch'</code>, <code>'space-between'</code>, <code>'space-evenly'</code>, or <code>'space-around'</code>.
 > In this example, items will be evely distributed along the main axis with equal space between.
 
-### 1.2 align-content
+### 5.2 align-content
 ```html
 <div class="container">
   <div class="item">Item 1</div>
@@ -429,7 +429,7 @@
 > Values can be <code>'start'</code>, <code>'center'</code>, <code>'end'</code>, <code>'stretch'</code>, <code>'space-between'</code>, <code>'space-evenly'</code>, or <code>'space-around'</code>.
 > In this example, items will be centered along the corss axis and block axis.
 
-### 1.3 place-content
+### 5.3 place-content
 ```html
 <div class="container">
   <div class="item">Item 1</div>
@@ -454,7 +454,7 @@
 
 # ▶️ Positioning
 
-### 1.1 grid-auto-flow
+### 6.1 grid-auto-flow
 ```html
 <div class="container">
   <div class="item">Item 1</div>
@@ -477,7 +477,7 @@
 > Values can be <code>'row'</code>, <code>'column'</code>, or <code>'dense'</code>.
 > In this example, items will be placed row by row within the grid.
 
-### 1.2 grid-auto-columns
+### 6.2 grid-auto-columns
 ```html
 <div class="container">
   <div class="item">Item 1</div>
@@ -499,7 +499,7 @@
 > It accept different measurement units such as pixels ('px'), percentages ('%'), etc.
 > In this example, columns without specified size will have a width of <code>100px</code>.
 
-### 1.3 grid-auto-rows
+### 6.3 grid-auto-rows
 ```html
 <div class="container">
   <div class="item">Item 1</div>
@@ -523,7 +523,7 @@
 
 # ▶️ Grid properties for items (child)
 
-### 1.1 grid-column
+### 7.1 grid-column
 ```html
 <div class="container">
   <div class="item">Item</div>
@@ -545,7 +545,7 @@
 > the syntax is <code>'start / end'</code>, where start and end are column positions.
 > In this example, the item starts at the first column and ends at the second column. 
 
-### 1.2 grid-column-start / end
+### 7.2 grid-column-start / end
 ```html
 <div class="container">
   <div class="item">Item</div>
@@ -568,7 +568,7 @@
 > <code>'grid-column-end'</code> determines the ending column position of the item on the grid.
 > In this example, the item starts at the first column and ends at the second column.
 
-### 1.3 grid-row
+### 7.3 grid-row
 ```html
 <div class="container">
   <div class="item">Item</div>
@@ -590,7 +590,7 @@
 > The syntax is <code>'start / end'</code>, where start and end are row positions.
 > In this example, the item starts at the first row and ends a the second row.
 
-### 1.4 grid-row-start / end
+### 7.4 grid-row-start / end
 ```html
 <div class="container">
   <div class="item">Item</div>
@@ -615,7 +615,7 @@
 
 # ▶️ Justification and Alignment
 
-### 1.1 justify-self
+### 8.1 justify-self
 ```html
 <div class="container">
   <div class="item">Item</div>
@@ -636,7 +636,7 @@
 > Values can be <code>'start'</code>, <code>'center'</code>, <code>'end'</code>, or <code>'stretch'</code>.
 > In this example, the item will be aligned to the start of its grid cell along the inline axis.
 
-### 1.2 align-self
+### 8.2 align-self
 ```html
 <div class="container">
   <div class="item">Item</div>
@@ -657,7 +657,7 @@
 > Values can be <code>'start'</code>, <code>'center'</code>, <code>'end'</code>, or <code>'stretch'</code>.
 > In this example, the item will be aligned to the start of its grid cell along the block axis
 
-### 1.3 place-self
+### 8.3 place-self
 ```html
 <div class="container">
   <div class="item">Item</div>
